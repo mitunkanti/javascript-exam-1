@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Programming</title>
+</head>
+<body>
+
+	<script>
+		
+		// 1. Write a JS program to input a number and check positive, negative or zero using if else.
+
+
+		var answer = "Answer : 01 <br>";
+		var result = answer.bold();
+		document.write(result);
+
+		
+		var num1 = 9;
+		var num2 = 11;
+
+		var result = (num1 - num2);
+
+		document.write('Value: ' + result + '<br>');
+		if(result < 0){
+			document.write('Result: Negative ' );
+		}else{
+			document.write('Result: Positive ' );
+		}
+
+		document.write('<br><br>');
+
+
+	</script>
+
+	<script>
+		//2. Write a JS program to input sides of a triangle and check whether a triangle is equilateral, scalene or isosceles triangle using if else. 
+
+		var answer = "Answer : 02 <br>";
+		var result = answer.bold();
+		document.write(result);
+
+		var num1 = 30;
+		var num2 = 30;
+		var num3 = 30;
+
+		if(num1==num2 && num2==num3 && num1==num3)
+			document.write("The Triangle is Equilateral");
+		
+		else 
+			document.write("The Triangle is Scalene");
+		
+
+		document.write('<br><br>');
+
+	</script>
+
+	<script>
+		//3. Write a JS program to input sides of a triangle and check if its possible to create a triangle or not. 
+		
+		var answer = "Answer : 03 <br>";
+		var result = answer.bold();
+		document.write(result);
+
+		var a = 28;
+		var b = 25;
+		var c = 12;
+
+		if(a+b>c && a+c>b && b+c>a)
+			document.write("Triangle");
+		else
+			document.write("Not Triangle");
+
+			document.write('<br><br>');
+
+	</script>
+
+
+
+	<script>
+		// 04. five sebjects grade
+
+		// If percentage >= 90% : Grade A
+		// If percentage >= 80% : Grade B
+		// If percentage >= 70% : Grade C
+		// If percentage >= 60% : Grade D
+		// If percentage >= 40% : Grade E
+		// If percentage < 40% : Grade F 
+
+		var answer = "Answer : 04 <br>";
+		var result = answer.bold();
+		document.write(result);
+
+
+
+
+		//five subjects marks
+
+		var Physics = 81;
+		var Chemistry = 83;
+		var Biology = 85;
+		var Mathematics = 88;
+		var Computer = 82;
+
+		var average = (Physics + Chemistry + Biology + Mathematics + Computer) / 5; 
+
+		average = parseInt(average);
+
+		document.write('Average Number : '+ average + '<br>'); 
+
+		if(average >= 90 && average <= 100){
+			document.write('Grade A');
+		}
+
+		if(average >= 80 && average < 90){
+			document.write('Grade B');
+		}
+
+
+		if(average >= 70 && average < 80){
+			document.write("Grade C");
+		}
+
+
+		if(average >= 60 && average < 70){
+			document.write("Grade D");
+		}
+ 
+
+		if(average >= 40 && average < 60){
+			document.write("Grade E");
+		}
+
+
+		if(average >=0 && average < 40){
+			document.write("Grade F");
+		}
+
+		document.write('<br><br>');
+
+	</script>
+
+
+<script>
+	//*5. Write a JS program to input electricity unit charge and calculate the total electricity bill according to the given condition:
+	//For the first 50 units Taka. 0.50/unit
+	//For the next 100 units, Taka. 0.75/unit
+	//For the next 100 units, Taka. 1.20/unit
+	//For units above 250 Taka. 1.50/unit
+	//An additional surcharge of 20% is added to each bill.
+
+		var answer = "Answer : 05 <br>";
+		var result = answer.bold();
+		document.write(result);
+
+
+
+	var electricity_unit = 550 ;
+
+	document.write('Total Electricity Units: ' + electricity_unit  + '<br>');
+
+	var condition_1	= 0.50; // For the first 50 Units
+	var condition_2	= 0.75; // For the next 100 Units
+	var condition_3	= 1.20; // For the next 100 Units
+	var condition_4	= 1.50; // 250 Units above
+	
+
+	if(electricity_unit >=0 && electricity_unit <=50){
+		document.write('Total Unit Charge : ' + condition_1 * electricity_unit + ' Taka');
+	}
+
+	if(electricity_unit >=51 && electricity_unit <=150){
+		document.write('Total Unit Charge : ' + condition_2 * electricity_unit + ' Taka');
+	}
+
+	if(electricity_unit >=151 && electricity_unit <=250){
+		document.write('Total Unit Charge : ' + condition_3 * electricity_unit + ' Taka');
+	}
+
+	if(electricity_unit >=251 ){
+		document.write('Total Unit Charge : ' + condition_4 * electricity_unit + ' Taka');
+	}
+
+	document.write('<br> Additional surcharge 20% : ' + ((condition_4 * electricity_unit)*20/100) + ' Taka');
+	
+	document.write('<br> Total Bill Amount : ' + ((condition_4 * electricity_unit)+((condition_4 * electricity_unit)*20/100)) + ' Taka');
+
+
+
+</script>
+
+
+</body>
+</html>
