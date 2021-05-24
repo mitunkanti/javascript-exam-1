@@ -154,7 +154,7 @@
 
 
 
-	var electricity_unit = 150 ;
+	var electricity_unit = 250 ;
 	var subtotal = 0;
 
 	document.write('Total Electricity Units: ' + electricity_unit  + '<br>');
@@ -174,11 +174,11 @@
 	}
 
 	if(electricity_unit >=151 && electricity_unit <=250){
-		subtotal= (condition_3 * electricity_unit) + ((condition_1 * 50) + (condition_2 * 100));
+		subtotal= (condition_3 * (electricity_unit-150)) + ((condition_1 * 50) + (condition_2 * 100));
 	}
 
 	if(electricity_unit >=251 ){
-		subtotal= (condition_4 * electricity_unit-250) + ((condition_1 * 50) + (condition_2 * 100) + (condition_3 * 100));
+		subtotal= (condition_4 * (electricity_unit-250)) + ((condition_1 * 50) + (condition_2 * 100) + (condition_3 * 100));
 	}
 
 	
